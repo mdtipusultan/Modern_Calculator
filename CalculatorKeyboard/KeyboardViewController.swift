@@ -146,6 +146,6 @@ class KeyboardViewController: UIInputViewController {
     }
 }
 
-extension Notification.Name {
-    static let calculatorKeyPressed = Notification.Name("calculatorKeyPressed")
-}
+//extension Notification.Name {
+//    static let calculatorKeyPressed = Notification.Name("calculatorKeyPressed")
+//}
