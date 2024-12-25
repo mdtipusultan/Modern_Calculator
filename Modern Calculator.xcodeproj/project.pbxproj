@@ -6,9 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE6562212D1BCAF0009C71BD /* CalculatorKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CE65621A2D1BCAF0009C71BD /* CalculatorKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE65621F2D1BCAF0009C71BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6561ED2D18A6F6009C71BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE6562192D1BCAF0009C71BD;
+			remoteInfo = CalculatorKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE6562222D1BCAF0009C71BD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE6562212D1BCAF0009C71BD /* CalculatorKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CE6561F52D18A6F6009C71BD /* Modern Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modern Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE65621A2D1BCAF0009C71BD /* CalculatorKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CalculatorKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CE6562252D1BCAF0009C71BD /* Exceptions for "CalculatorKeyboard" folder in "CalculatorKeyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CE6562192D1BCAF0009C71BD /* CalculatorKeyboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CE6561F72D18A6F6009C71BD /* Modern Calculator */ = {
@@ -16,10 +55,25 @@
 			path = "Modern Calculator";
 			sourceTree = "<group>";
 		};
+		CE65621B2D1BCAF0009C71BD /* CalculatorKeyboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CE6562252D1BCAF0009C71BD /* Exceptions for "CalculatorKeyboard" folder in "CalculatorKeyboard" target */,
+			);
+			path = CalculatorKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE6561F22D18A6F6009C71BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6562172D1BCAF0009C71BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6561F72D18A6F6009C71BD /* Modern Calculator */,
+				CE65621B2D1BCAF0009C71BD /* CalculatorKeyboard */,
 				CE6561F62D18A6F6009C71BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6561F52D18A6F6009C71BD /* Modern Calculator.app */,
+				CE65621A2D1BCAF0009C71BD /* CalculatorKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				CE6561F12D18A6F6009C71BD /* Sources */,
 				CE6561F22D18A6F6009C71BD /* Frameworks */,
 				CE6561F32D18A6F6009C71BD /* Resources */,
+				CE6562222D1BCAF0009C71BD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE6562202D1BCAF0009C71BD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CE6561F72D18A6F6009C71BD /* Modern Calculator */,
@@ -69,6 +127,28 @@
 			productName = "Modern Calculator";
 			productReference = CE6561F52D18A6F6009C71BD /* Modern Calculator.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CE6562192D1BCAF0009C71BD /* CalculatorKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6562262D1BCAF0009C71BD /* Build configuration list for PBXNativeTarget "CalculatorKeyboard" */;
+			buildPhases = (
+				CE6562162D1BCAF0009C71BD /* Sources */,
+				CE6562172D1BCAF0009C71BD /* Frameworks */,
+				CE6562182D1BCAF0009C71BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CE65621B2D1BCAF0009C71BD /* CalculatorKeyboard */,
+			);
+			name = CalculatorKeyboard;
+			packageProductDependencies = (
+			);
+			productName = CalculatorKeyboard;
+			productReference = CE65621A2D1BCAF0009C71BD /* CalculatorKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					CE6561F42D18A6F6009C71BD = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					CE6562192D1BCAF0009C71BD = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				CE6561F42D18A6F6009C71BD /* Modern Calculator */,
+				CE6562192D1BCAF0009C71BD /* CalculatorKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CE6561F32D18A6F6009C71BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6562182D1BCAF0009C71BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE6562162D1BCAF0009C71BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE6562202D1BCAF0009C71BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE6562192D1BCAF0009C71BD /* CalculatorKeyboard */;
+			targetProxy = CE65621F2D1BCAF0009C71BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CE6562012D18A6F7009C71BD /* Debug */ = {
@@ -304,6 +410,56 @@
 			};
 			name = Release;
 		};
+		CE6562232D1BCAF0009C71BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NG5UXJYS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalculatorKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CalculatorKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Modern-Calculator.CalculatorKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE6562242D1BCAF0009C71BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NG5UXJYS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalculatorKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CalculatorKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Modern-Calculator.CalculatorKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,6 +477,15 @@
 			buildConfigurations = (
 				CE6562042D18A6F7009C71BD /* Debug */,
 				CE6562052D18A6F7009C71BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6562262D1BCAF0009C71BD /* Build configuration list for PBXNativeTarget "CalculatorKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6562232D1BCAF0009C71BD /* Debug */,
+				CE6562242D1BCAF0009C71BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

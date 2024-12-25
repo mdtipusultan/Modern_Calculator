@@ -2,7 +2,7 @@
 //  Modern_CalculatorApp.swift
 //  Modern Calculator
 //
-//  Created by MacBook Pro M1 Pro on 12/22/24.
+//  Created by Tipu Sultan on 12/22/24.
 //
 
 import SwiftUI
